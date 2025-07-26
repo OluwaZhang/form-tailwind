@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind installation</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-green-100 flex justify-center items-center h-screen">
+   <section class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col gap-5 text-xl">
+        <h1 class="font-bold text-2xl">Contact Us</h1>
+        <form action="#" class="flex flex-col gap-5">
+
+           <div class="flex gap-5">
+                <div class="flex flex-col w-50">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="border border-gray-500 rounded-md px-4 py-1.5">
+                </div>
+
+                <div class="flex flex-col w-50">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="border border-gray-500 rounded-md px-4 py-1.5">
+                </div>
+           </div>
+
+           <div class="flex flex-col">
+             <label for="email">Email Address</label>
+             <input type="text" class="border  border-gray-500 rounded-md px-4 py-1.5">   
+           </div>
+
+           <div class="flex flex-col">
+                <label for="query">Query</label>
+                <div class="flex gap-5">
+                    <p class="border w-50  border-gray-500 rounded-md px-4 py-1.5">
+                        <input type="radio">
+                        <label for="enquiry" >General Enquires</label>
+                    </p>
+                    <p class="border w-50 p border-gray-500 rounded-md px-4 py-1.5">
+                        <input type="radio">
+                        <label for="suppport">Support Request</label>
+                    </p>
+                </div>
+           </div>
+
+           <div class="flex flex-col">
+                <label for="message">Message</label>
+                <input type="textarea" class="border  border-gray-500 rounded-md px-4 py-1.5 h-40">  
+           </div>
+
+           <div class="flex items-center gap-3">
+                <input type="checkbox" name="consent" id="consent">
+                <label>I consent to be contavted by the team</label>
+           </div>
+
+           <button type="submit" class="border bg-green-800  border-gray-500 rounded-md px-4 py-1.5 cursor-pointer">Submit</button>
+        </form>
+   </section>
+</body>
+</html>
